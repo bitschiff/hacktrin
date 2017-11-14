@@ -1,0 +1,33 @@
+/*body {
+    background-color: #000000;
+    text-align: center;
+}*/
+
+@font-face {
+  font-family: monospace;
+    /*src: url(fonts/Hack-Regular.ttf);*/
+}
+
+h2 {
+    color: black;
+    font-family: monospace;
+    font-size: 700%;
+    display: inline-block;
+    text-align: center;
+}
+
+#splitter { 
+    color: white;
+}
+#days { 
+    color: blue;
+}
+#hours { 
+    color: red;
+}
+#mins { 
+    color: gold;
+}
+#secs { 
+    color: green;
+}
