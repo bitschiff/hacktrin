@@ -1,7 +1,7 @@
 var endDate = new Date("Feb 12, 2018 15:37:25").getTime();
 
 var x = setInterval(function() {
-  document.getElementById("header").innerHTML = "Time Until HackTrin Begins:";
+  document.getElementById("header").innerHTML = "HackTrin Begins In:";
 
   // Get todays date and time
   var now = new Date().getTime();
