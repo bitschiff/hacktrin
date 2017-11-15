@@ -1,9 +1,9 @@
-var endDate = new Date("Feb 12, 2018 15:37:25").getTime();
+var endDate = new Date("Feb 25, 2018 8:00:00").getTime();
 
 var x = setInterval(function() {
   document.getElementById("header").innerHTML = "HackTrin Begins In:";
 
-  // Get todays date and time
+  // Get todays date and timex
   var now = new Date().getTime();
 
   // Find the distance between now an the count down date
@@ -17,10 +17,10 @@ var x = setInterval(function() {
 
   // Display the result in the element with id="demo"
  // document.getElementById("counter").innerHTML = numToBinary(days) + ":" + numToBinary(hours) + ":" + numToBinary(minutes) + ":" + numToBinary(seconds);
- document.getElementById("days").innerHTML = numToBinary(days,7) + "D";
- document.getElementById("hours").innerHTML = numToBinary(hours,5)+ "H";
- document.getElementById("mins").innerHTML = numToBinary(minutes,6)+  "M";
- document.getElementById("secs").innerHTML = numToBinary(seconds,6)+ "S";
+ document.getElementById("days").innerHTML = numToBinary(days,3) + "D";
+ document.getElementById("hours").innerHTML = numToBinary(hours,2)+ "H";
+ document.getElementById("mins").innerHTML = numToBinary(minutes,2)+  "M";
+ document.getElementById("secs").innerHTML = numToBinary(seconds,2)+ "S";
 
  var splitters = document.getElementsByClassName("splitter");
  for(i=0;i<splitters.length;i++){
@@ -39,5 +39,5 @@ var x = setInterval(function() {
 //document.getElementById("counter").innerHTML = numToBinary(165);
 
 function numToBinary(theNum,length) {
-  return ("0000000000000000" + theNum.toString(2)).slice(-1*length);
+  return ("0000000000000000" + theNum.toString(10)).slice(-1*length);
 }
