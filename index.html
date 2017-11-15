@@ -52,8 +52,8 @@
       <li>
         <a class="js-scroll-trigger" href="#schedule">Schedule</a>
       </li>
-       <li>
-        <a class="js-scroll-trigger" href="#judges">Judges</a>
+      <li>
+        <a class="js-scroll-trigger" href="#team">team</a>
       </li>
       <!-- <li>
         <a class="js-scroll-trigger" href="#contact" onclick=$( "#menu-close").click();>Contact</a>
@@ -125,7 +125,9 @@
                     <strong>About Us</strong>
                   </h4>
                   <p></p>
-                  <a href="#about" class="btn btn-light">Learn More</a>
+                  <button type="button" class="btn btn-light">
+                    <a class="js-scroll-trigger" href="#about">Learn More</a>
+                  </button>
                 </div>
               </div>
               <div class="col-md-2 col-sm-6">
@@ -138,7 +140,10 @@
                     <strong>Theme</strong>
                   </h4>
                   <p></p>
-                  <a href="#theme" class="btn btn-light">Learn More</a>
+                  <button type="button" class="btn btn-light">
+                    <a class="js-scroll-trigger" href="#theme">Learn More</a>
+                  
+                  </button>
                 </div>
               </div>
 
@@ -152,7 +157,9 @@
                     <strong>Location</strong>
                   </h4>
                   <p></p>
-                  <a href="#map" class="btn btn-light">Learn More</a>
+                  <button type="button" class="btn btn-light">
+                    <a class="js-scroll-trigger" href="#map">Learn More</a>
+                  </button>
                 </div>
               </div>
 
@@ -166,7 +173,9 @@
                     <strong>Schedule</strong>
                   </h4>
                   <p></p>
-                  <a href="#schedule" class="btn btn-light">Learn More</a>
+                  <button type="button" class="btn btn-light">
+                    <a class="js-scroll-trigger" href="#schedule">Learn More</a>
+                  </button>
                 </div>
               </div>
               <div class="col-md-2 col-sm-6">
@@ -176,10 +185,12 @@
                     <i class="fa fa-trophy fa-stack-1x text-primary"></i>
                   </span>
                   <h4>
-                    <strong>Judges</strong>
+                    <strong>Our Team</strong>
                   </h4>
                   <p></p>
-                  <a href="#judges" class="btn btn-light">Learn More</a>
+                  <button type="button" class="btn btn-light">
+                    <a class="js-scroll-trigger" href="#team">Learn More</a>
+                </button>
                 </div>
               </div>
 
@@ -208,110 +219,110 @@
         <div class="row">
           <div class="col-lg-10 mx-auto text-center">
             <h1>About Us</h1>
-            <h3>HackTrin is run by Trinity School with the help from The Spence School. We encourage everyone from beginners to experts to participate in our hackathon. Teams should be 1-4, participants can create apps, websites, robots, and more. All projects will be presented to our panel of judges to compete for multipal different catigories<h3>
+            <h3>HackTrin is run by Trinity School with the help from The Spence School. We encourage everyone from beginners to experts to participate in our hackathon. Teams should be 1-4, participants can create apps, websites, robots, and more. All projects will be presented to our panel of team to compete for multipal different catigories<h3>
+            </div>
+            <!-- /.row -->
           </div>
-          <!-- /.row -->
-        </div>
 
-        <!-- /.container -->
-      </section>
+          <!-- /.container -->
+        </section>
 
-      <!-- Call to Action -->
-      <section id="theme" class="theme">
-        <aside class="call-to-action bg-primary text-white">
-          <div class="container text-center">
-            <h3>This years theme is: </h3>
-            <h1>Anything You Want</h1>
-            <br>
-            <p>You should interpret this theme however you feel is best!</p>
-            <p>Also feel free to use hardware such as arduions, body sensors, vr headsets...</p>
+        <!-- Call to Action -->
+        <section id="theme" class="theme">
+          <aside class="call-to-action bg-primary text-white">
+            <div class="container text-center">
+              <h3>This years theme is: </h3>
+              <h1>Anything You Want</h1>
+              <br>
+              <p>You should interpret this theme however you feel is best!</p>
+              <p>Also feel free to use hardware such as arduions, body sensors, vr headsets...</p>
+            </div>
+          </aside>
+        </section>
+
+        <!-- Map -->
+        <section id="contact" class="map">
+          <style>
+          #map {
+            height: 600px;
+            width: 100%;
+          }
+        </style>
+        <div id="map"></div>
+        <script>
+          function initMap() {
+            var uluru = {lat: 40.7905327, lng: -73.9712986};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 16,
+              center: uluru
+            });
+            var marker = new google.maps.Marker({
+              position: uluru,
+              map: map
+            });
+          }
+        </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0lVlR7SPi4Zzal6kKNdpLCxpnA0sbFdA&callback=initMap">
+      </script>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+    <section id="schedule" class="schedule">
+      <aside class="call-to-action bg-primary text-white">
+        <div class="container text-center">
+          <h1>Schedule</h1>
+
+
+          <table align="center">
+            <tbody><tr>  <td>Sunday</td>                          </tr>
+              <tr>  <td>8:00-8:30</td> <td> Setup and signin </td>          </tr> 
+              <tr>  <td>8:30-9:00</td> <td> Welcome and introductions </td>     </tr>
+              <tr>  <td>9:00-12:30</td> <td>  Coding</td>               </tr>
+              <tr>  <td>12:30-1:00</td> <td>  Lunch </td>               </tr>
+              <tr>  <td>1:00-6:00</td> <td> Coding and Workshops</td>       </tr>
+              <tr>  <td>6:00-7:00</td> <td> Judging/Presentations and Dinner </td>  </tr>
+              <tr>  <td>  7:00-8:00</td> <td> Awards </td></tr>
+            </tbody></table>
           </div>
         </aside>
       </section>
 
-      <!-- Map -->
-      <section id="contact" class="map">
-        <style>
-        #map {
-          height: 600px;
-          width: 100%;
-        }
-      </style>
-      <div id="map"></div>
-      <script>
-        function initMap() {
-          var uluru = {lat: 40.7905327, lng: -73.9712986};
-          var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 16,
-            center: uluru
-          });
-          var marker = new google.maps.Marker({
-            position: uluru,
-            map: map
-          });
-        }
-      </script>
-      <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0lVlR7SPi4Zzal6kKNdpLCxpnA0sbFdA&callback=initMap">
-    </script>
-  </section>
-  <br>
-  <br>
-  <br>
-  <br>
-
-
-
-
-  <section id="schedule" class="schedule">
-    <aside class="call-to-action bg-primary text-white">
-      <div class="container text-center">
-        <h1>Schedule</h1>
-
-
-        <table align="center">
-          <tbody><tr>  <td>Sunday</td>                          </tr>
-            <tr>  <td>8:00-8:30</td> <td> Setup and signin </td>          </tr> 
-            <tr>  <td>8:30-9:00</td> <td> Welcome and introductions </td>     </tr>
-            <tr>  <td>9:00-12:30</td> <td>  Coding</td>               </tr>
-            <tr>  <td>12:30-1:00</td> <td>  Lunch </td>               </tr>
-            <tr>  <td>1:00-6:00</td> <td> Coding and Workshops</td>       </tr>
-            <tr>  <td>6:00-7:00</td> <td> Judging/Presentations and Dinner </td>  </tr>
-            <tr>  <td>  7:00-8:00</td> <td> Awards </td></tr>
-          </tbody></table>
-        </div>
-      </aside>
-    </section>
-
-    <section id="judges" class="judges">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-10 mx-auto text-center">
-            <h2>Judges</h2>
-            <h2>Judges</h2>
-            <h2>Judges</h2>
-            <h2>Judges</h2>
-            <h2>Judges</h2>
-            
-          </div>
-          <!-- /.row -->
-        </div>
-
-        <!-- /.container -->
-      </section>
-
-
-      <!-- Footer -->
-      <footer>
+      <section id="team" class="team">
         <div class="container">
           <div class="row">
             <div class="col-lg-10 mx-auto text-center">
-              <h4>
-                <strong>HackTrin</strong>
-              </h4>
-              <p>Trinity School
-                <br>101 W 91st St <br> New York, NY 10024 </p>
-                <ul class="list-unstyled">
+              <h2>team</h2>
+              <h2>team</h2>
+              <h2>team</h2>
+              <h2>team</h2>
+              <h2>team</h2>
+
+            </div>
+            <!-- /.row -->
+          </div>
+
+          <!-- /.container -->
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-10 mx-auto text-center">
+                <h4>
+                  <strong>HackTrin</strong>
+                </h4>
+                <p>Trinity School
+                  <br>101 W 91st St <br> New York, NY 10024 </p>
+                  <ul class="list-unstyled">
                   <!-- <li>
                     <i class="fa fa-phone fa-fw"></i>
                   (123) 456-7890</li> -->
