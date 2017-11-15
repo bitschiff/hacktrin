@@ -17,10 +17,10 @@ var x = setInterval(function() {
 
   // Display the result in the element with id="demo"
  // document.getElementById("counter").innerHTML = numToBinary(days) + ":" + numToBinary(hours) + ":" + numToBinary(minutes) + ":" + numToBinary(seconds);
- document.getElementById("days").innerHTML = numToBinary(days,8);
- document.getElementById("hours").innerHTML = numToBinary(hours,5);
- document.getElementById("mins").innerHTML = numToBinary(minutes,6);
- document.getElementById("secs").innerHTML = numToBinary(seconds,6);
+ document.getElementById("days").innerHTML = numToBinary(days,7) + "D";
+ document.getElementById("hours").innerHTML = numToBinary(hours,5)+ "H";
+ document.getElementById("mins").innerHTML = numToBinary(minutes,6)+  "M";
+ document.getElementById("secs").innerHTML = numToBinary(seconds,6)+ "S";
 
  var splitters = document.getElementsByClassName("splitter");
  for(i=0;i<splitters.length;i++){
