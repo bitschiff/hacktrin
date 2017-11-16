@@ -15,6 +15,10 @@ body {
   font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+.head-text{
+  color: #ffffff;
+}
+
 
 .img-logo{
   max-width: 200px;
@@ -161,6 +165,27 @@ hr.small {
   transition: all .4s ease 0s;
 }
 
+
+
+
+/*video { 
+    position: sticky;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+
+    height: auto;
+
+
+    
+    transform: translateX(0%) translateY(0%);
+  background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}*/
+
+
+
 .toggle {
   font-size: 1em;
   margin: 5px 5px 0 0;
@@ -175,7 +200,8 @@ hr.small {
   display: table;
   width: 100%;
   height: 100%;
-  background: url(../img/bg.jpg) no-repeat center center scroll;
+
+  background: url(../img/back.gif) no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
