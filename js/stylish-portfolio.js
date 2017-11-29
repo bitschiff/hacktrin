@@ -83,7 +83,7 @@ $('.map').on('click', onMapClickHandler);
 
 var FIREFOX = /Firefox/i.test(navigator.userAgent);
 if (FIREFOX) {
-  var divsToHide = document.getElementsByClassName("learn-more-button"); //divsToHide is an array
+  var divsToHide = document.getElementsByClassName("hide-on-firefox"); //divsToHide is an array
     for(var i = 0; i < divsToHide.length; i++){
         divsToHide[i].style.visibility = "hidden"; // or
         divsToHide[i].style.display = "none"; // depending on what you're doing

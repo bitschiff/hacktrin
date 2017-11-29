@@ -4,9 +4,9 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio/blob/master/LICENSE)
  */
 
-/* Global Styles */
+ /* Global Styles */
 
-html, body {
+ html, body {
   width: 100%;
   height: 100%;
 }
@@ -157,9 +157,9 @@ hr.small {
   z-index: 1;
   bottom: 5px;
   left: 5px;
- color: black;
+  color: black;
 
- border: 4px solid black;
+  border: 4px solid black;
   border-radius: 10;
 }
 
@@ -190,135 +190,138 @@ hr.small {
   background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
   background-size: cover;
   transition: 1s opacity;
-}*/
+  }*/
 
 
 
-.toggle {
-  font-size: 1em;
-  margin: 5px 5px 0 0;
-  padding: 15px 20px;
-}
-
-
-/* Header */
-
-.header {
-  position: relative;
-  display: table;
-  width: 100%;
-  height: 75%;
-
-  background: url(../img/trinity.jpg) no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-
-/* About */
-
-.about {
-  padding: 50px 0;
-}
-
-
-/* Services */
-
-.services {
-  padding: 50px 0;
-}
-
-.service-item {
-  margin-bottom: 30px;
-}
-
-
-/* Callout */
-
-.callout {
-  display: table;
-  width: 100%;
-  height: 400px;
-  color: #fff;
-  background: url(../img/chart.png) no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-
-/* Portfolio */
-
-.portfolio {
-  padding: 50px 0;
-}
-
-.portfolio-item {
-  margin-bottom: 30px;
-}
-
-.img-portfolio {
-  margin: 0 auto;
-}
-
-.img-portfolio:hover {
-  opacity: .8;
-}
-
-
-/* Call to Action */
-
-.call-to-action {
-  padding: 50px 0;
-}
-
-.call-to-action .btn {
-  margin: 10px;
-}
-
-
-/* Map */
-
-.map {
-  height: 500px;
-}
-
-@media(max-width:768px) {
-  .map {
-    height: 75%;
+  .toggle {
+    font-size: 1em;
+    margin: 5px 5px 0 0;
+    padding: 15px 20px;
   }
-}
-
-.map iframe {
-  pointer-events: none;
-}
 
 
-/* Footer */
+  /* Header */
 
-footer {
-  padding: 100px 0;
-  background: #D3D3D3;
-}
+  .header {
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 75%;
 
-#to-top {
-  font-size: 1em;
-  position: fixed;
-  right: 5px;
-  bottom: 5px;
-  display: none;
-  padding: 15px 20px;
-}
+    background: url(../img/trinity.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 
 
-.btn-success {
-  color: black !important;
-}
+  /* About */
 
-.img-fluid {
-  max-width: 50%;
-  height: auto;
-}
+  .about {
+    padding: 50px 0;
+  }
+
+
+  /* Services */
+
+  .services {
+    padding: 50px 0;
+  }
+
+  .service-item {
+    margin-bottom: 30px;
+  }
+
+
+  /* Callout */
+
+  .callout {
+    display: table;
+    width: 100%;
+    height: 400px;
+    color: #fff;
+    background: url(../img/chart.png) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+
+  /* Portfolio */
+
+  .portfolio {
+    padding: 50px 0;
+  }
+
+  .portfolio-item {
+    margin-bottom: 30px;
+  }
+
+  .img-portfolio {
+    margin: 0 auto;
+  }
+
+  .img-portfolio:hover {
+    opacity: .8;
+  }
+
+
+  /* Call to Action */
+
+  .call-to-action {
+    padding: 50px 0;
+  }
+
+  .call-to-action .btn {
+    margin: 10px;
+  }
+
+
+  /* Map */
+
+  .map {
+    height: 500px;
+  }
+
+  @media(max-width:768px) {
+    .map {
+      height: 75%;
+    }
+  }
+
+  .map iframe {
+    pointer-events: none;
+  }
+
+
+  /* Footer */
+
+  footer {
+    padding: 100px 0;
+    background: #D3D3D3;
+  }
+
+  #to-top {
+    font-size: 1em;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    display: none;
+    padding: 15px 20px;
+  }
+
+
+  .btn-success {
+    color: black !important;
+  }
+
+  .img-fluid {
+    max-width: 50%;
+    height: auto;
+  }
+
+
+  .centerTable { margin-left:35%;  }
