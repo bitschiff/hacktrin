@@ -1,1 +1,1 @@
-# http://hacktrin.com/
+# https://elihschiff.github.io/hacktrin/
